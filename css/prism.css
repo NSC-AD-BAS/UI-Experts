@@ -1,0 +1,263 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Buda:300|Palanquin:400,700,100|Vollkorn:400,400italic|NTR");
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, footer, header,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+ol, ul{
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*:after, *:before {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+/* --------------------------- Google Fonts -------------------------- */
+        /*
+        font-family: 'Buda', cursive    300 weight
+        font-family: 'Palanquin', sans-serif;   100, 400, 700
+        font-family: 'Vollkorn', serif;     400, 400 italic
+        font-family: 'NTR', sans-serif;     400
+/* --------------------------- Global Styles -------------------------- */
+
+html {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #5C5B5C;
+    width: 70%;
+    height: auto;
+    padding: 2px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: verdana, Helvetica, sans-serif;
+    font-size: 1em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: lightgray;
+}
+
+header {
+    width:100%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Segoe UI", "Segoe UI Light";
+    font-weight: 500;
+    border-bottom: 2px solid lightgray;
+}
+
+input  {
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px #333333;
+    background-color: lightgray;
+    color: #000000;
+    border-radius: 5px;
+}
+
+a {
+    color: lightgray;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+#mainContent {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    text-align: center;
+}
+
+main {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: #333333;
+    max-height: 400px;
+    width: 62%;
+    padding: 5px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    order: 1;
+    margin: 10px;
+    text-align: left;
+    color: black;
+    text-shadow: 1px 1px 20px #FF3399;
+}
+
+main a {
+    color: lightgray;
+    text-shadow:none;
+}
+
+aside {
+    background-color: #333333;
+    width: 37%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    order: 2;
+    margin: 10px;
+}
+
+#topLeftHeader {
+    min-height: 1px;
+    height: 78px;
+    width: 308px;
+    padding-bottom: 5px;
+    border-top-left-radius: 10px;
+    padding-left: 20px;
+    float: left;
+    background-image: url(../img/prismLogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#topRightHeader {
+    min-height: 1px;
+    height: 78px;
+    width: 400px;
+    padding-bottom: 5px;
+    border-top-right-radius: 10px;
+    padding-right: 20px;
+    margin-right: 15px;
+    float: right;
+    background-image: url(../img/nscLogo.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#bottomHeader {
+    padding: 10px 0 3px 0;
+    clear: both;
+    width: 100%;
+    border-top: 3px solid #333333;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+.linksActive {
+    display: inline;
+    padding: 0 5px 0 5px;
+    background-color: #5C5B5C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px -1px 1px #67FF67;
+    border-bottom: 5px solid #5C5B5C;
+}
+
+.linksInactive {
+    display: inline;
+    padding: 0 5px 0 5px;
+    background-color: #333333;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: -1px -2px 1px #000000;
+    border-bottom: 3px solid #333333;
+}
+
+.linksHidden {
+    display: none;
+}
+
+.nameType {
+    display: inline;
+    margin-right: 20px;
+    padding: 0 5px 0 5px;
+    background-color:#000000;
+    color: lightgray;
+}
+
+#nav {
+    margin-left: 20px;
+    order: 1;
+    width: 90%;
+}
+
+#logout {
+    order: 2;
+    width: 10%;
+    text-align: right;
+    margin-right: 20px;
+    padding: 0 2px 0 2px;
+}
+
+#mainSearch {
+    width: 250px;
+    height: 28px;
+    padding-left: 8px;
+    order: 1;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 900;
+}
+
+
+#mainSearchButton {
+    margin-top: 2px;
+    margin-left: 8px;
+    min-height: 1px;
+    height: 28px;
+    min-width: 1px;
+    width: 28px;
+    background-image: url(../img/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-color: transparent;
+    order: 2;
+}
+
+#searchBar {
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    margin-left: 18%;
+    margin-right: 52%;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
