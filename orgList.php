@@ -32,6 +32,7 @@
 <div id="mainContent">
 	<main>
 <?php
+$allOrgs = array();
 $servername="localhost";
 $username="root";
 $password ="mysql";
@@ -55,6 +56,7 @@ while($row= mysqli_fetch_assoc($result)){
 $varName=$row["OrganizationId"];
 //HERE LETS ALSO ADD EACH ORG ID TO A BRAND NEW ARRAY, WHICH WE CAN PASS TO THE ORGDETAILS
 // PAGE SO THAT ON THAT PAGE, WE CAN HAVE A "PREVIOUS" AND "NEXT" LINK TO CLICK ON
+$allOrgs[] = $row["OrganizationId"];
 echo "<a href='orgDetails.php?orgId=$varName'>" .$row["OrganizationName"]. "</a>
 -City: " .$row["City"]. "<br>";
 }
