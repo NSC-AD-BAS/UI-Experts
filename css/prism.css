@@ -49,7 +49,11 @@ table {
 /* --------------------------- Global Styles -------------------------- */
 
 html {
-    background-color: lightgray;
+    background: #000000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #000000, #660035); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #000000, #660035); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #000000, #660035); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #000000, #660035); /* Standard syntax */
     border-radius: 10px;
 }
 
@@ -114,31 +118,24 @@ main {
     overflow-x:hidden;
     background-color: #333333;
     max-height: 400px;
-    width: 62%;
+    height: 400px;
+    width: 40%;
     padding: 5px;
     box-shadow: 1px 1px 8px black;
     border-radius: 5px;
     order: 1;
     margin: 10px;
     text-align: left;
-    color: black;
-    text-shadow: 1px 1px 20px #FF3399;
+    color: lightgray;
+    text-shadow: 1px 1px 5px #000000;
+    background-image: url(../img/prism.png);
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 main a {
     color: lightgray;
     text-shadow:none;
-}
-
-aside {
-    background-color: #333333;
-    width: 37%;
-    height: auto;
-    padding: 5px;
-    box-shadow: 1px 1px 8px black;
-    border-radius: 5px;
-    order: 2;
-    margin: 10px;
 }
 
 #topLeftHeader {
@@ -229,6 +226,7 @@ aside {
     height: 28px;
     padding-left: 8px;
     order: 1;
+    background-color: #5C5B5C;
     font-family: 'Palanquin', sans-serif;
     font-weight: 900;
 }
@@ -253,11 +251,61 @@ aside {
     padding: 5px;
     width: 30%;
     text-align: center;
-    margin-left: 18%;
-    margin-right: 52%;
+    margin-left: 10px;
     margin-top: 10px;
     display: inline-flex;
     flex-direction: row;
     flex-flow: row nowrap;
+    background-color:#333333;
+    border-radius:3px;
+}
+
+aside {
+    background-color: #333333;
+    width: 60%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    order: 2;
+    margin: 10px;
+    display:inline-flex;
+    flex-direction:row;
+    flex-flow:row nowrap;
+}
+
+#leftAside {
+    min-height: 1px;
+    height: 380px;
+    width: 90%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    order:1;
+    margin: 5px;
+}
+
+#rightAside {
+    min-height: 1px;
+    height: 380px;
+    width: 54px;
+    padding: 5px;
+    border:1px solid lightgray;
+    order: 2;
+    margin:5px;
+    background-color: #000000;
+}
+
+.listItem {
+    background-color: transparent;
+    width: 80%;
+}
+
+.listItem:hover {
+    background: #000000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #660035, #000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #660035, #000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #660035, #000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #660035, #000000); /* Standard syntax */
+    border-radius: 10px;
 }
 

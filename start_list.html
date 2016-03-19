@@ -8,6 +8,7 @@
     <title>PRISM Start List</title>
     <link rel="stylesheet" type="text/css" href="css/prism.css">
     <script type="text/javascript" src="js/tabValidator.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 </head>
 <body onload="setHandlers()">
 <header>
@@ -20,7 +21,8 @@
                 <li class="linksHidden" id="oTab"><a href="#" class="tabLink" id="2">Organizations</a></li>
                 <li class="linksHidden" id="fTab"><a href="#" class="tabLink" id="3">Faculty</a></li>
                 <li class="linksHidden" id="sTab"><a href="#" class="tabLink" id="4">Students</a></li>
-                <li class="nameType" id="tTab">Welcome to PRISM</li>
+                <li class="linksHidden" id="eTab"><a href="#" class="tabLink" id="5">Administrator</a></li>
+                <li class="nameType" id="tTab"></li>
             </ul>
         </nav>
         <div id="logout">
@@ -34,15 +36,20 @@
 </div>
 <div id="mainContent">
 <main>
-    <h2>dynamic div content</h2>
-    <div id="iMain">internship stuff</div>
-    <div id="oMain">organization stuff</div>
-    <div id="fMain">faculty stuff</div>
-    <div id="sMain">student stuff</div>
+    <div id="iMain">
+        <div id="mainList">
+        </div>
+    </div>
+    <div id="oMain"></div>
+    <div id="fMain"></div>
+    <div id="sMain"></div>
 </main>
 <aside>
-    <h2>dynamic profile content</h2>
+    <div id="leftAside"><h3>Dynamic Google Map Content</h3></div>
+    <div id="rightAside"></div>
 </aside>
 </div>
+<footer>
+</footer>
 </body>
 </html>
